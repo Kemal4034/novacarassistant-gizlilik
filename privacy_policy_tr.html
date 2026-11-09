@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nova: Car Assistant – Gizlilik Politikası</title>
+<style>body{font-family:system-ui,Segoe UI,Arial,sans-serif;max-width:760px;margin:0 auto;padding:24px 18px 60px;line-height:1.6;color:#1b2233}h1{font-size:28px}h2{font-size:20px;margin-top:32px}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccd;padding:8px;text-align:left;vertical-align:top;font-size:15px}.n{color:#667}</style></head><body>
+<h1>Nova: Car Assistant – Gizlilik Politikası</h1>
+<p class="n">Son güncelleme: 9 Kasım 2026 · Paket adı: com.novacarassistant</p>
+
+<h2>1. Kimiz</h2>
+<p>Nova: Car Assistant (“Uygulama”), <b>Novus Dynamic</b> tarafından yayımlanan, araç multimedya ünitesini sesle yöneten bir sesli asistandır. İletişim: <b>[İLETİŞİM E-POSTASI]</b></p>
+
+<h2>2. Kısaca</h2>
+<ul>
+<li>Nova’nın kendi sunucusu, hesabı ve üyeliği <b>yoktur</b>. Verilerin bize ulaşmaz.</li>
+<li>Reklam yoktur, analiz/çökme raporu toplanmaz, veri satılmaz.</li>
+<li>Ayarların, notların ve API anahtarların yalnızca cihazında saklanır; anahtarlar Android Keystore ile şifrelenir.</li>
+</ul>
+
+<h2>3. Hangi veriler, ne için kullanılır</h2>
+<table>
+<tr><th>Veri</th><th>Ne için</th><th>Nereye gider</th></tr>
+<tr><td><b>Mikrofon sesi</b></td><td>Sesli komutu anlamak. Yalnızca sen konuşturduğunda ya da “Sesli çağrı”yı açtığında dinlenir. Ses kaydedilip saklanmaz.</td><td>Vosk, Whisper ve cihaz içi Android tanıma seçiliyken <b>cihazdan çıkmaz</b>. İnternet varken “Android ses tanıma” kullanılırsa ses, cihazın ses tanıma hizmetine (genellikle Google) gönderilir; sesin o hizmette ne kadar tutulacağını o hizmetin gizlilik politikası belirler; Nova sesi saklamaz. Ayarlar → Dinleme’den çevrimdışı motoru zorlayabilirsin.</td></tr>
+<tr><td><b>Yazdığın / söylediğin metin</b> (yalnızca kendi API anahtarını girersen)</td><td>Serbest sohbet ve bulut sesi</td><td>Seçtiğin sağlayıcıya (Google Gemini, OpenAI uyumlu bir hizmet, Anthropic, ElevenLabs) <b>senin anahtarınla</b> gönderilir. Nova bu içeriği görmez ve saklamaz. Sağlayıcının koşulları geçerlidir.</td></tr>
+<tr><td><b>Şehir / yaklaşık konum</b></td><td>Hava durumu. Şehri sen girersin; girmezsen yaklaşık konum IP adresinden bulunur (ipwho.is).</td><td>Open‑Meteo ve ipwho.is’e yalnızca sen hava durumu istediğinde gider.</td></tr>
+<tr><td><b>Ekran içeriği (erişilebilirlik hizmeti)</b></td><td>Sesli komutla araç ekranındaki klima, koltuk ve ses tuşlarını bulup dokunmak; kaydettiğin makroları tekrarlamak; müzik uygulamasında şarkı aramak; sıcaklık göstergesini okumak</td><td>Yalnızca cihazda, anlık okunur; kaydedilmez, hiçbir yere gönderilmez. Öğrettiğin tuş konumları ve makrolar yalnızca cihazda saklanır. Hizmeti istediğin zaman Android Ayarları › Erişilebilirlik’ten kapatabilirsin.</td></tr>
+<tr><td><b>Haber istekleri</b></td><td>Haber başlıklarını ve kısa içeriklerini okumak</td><td>TRT Haber RSS’e ve Google Haberler RSS aramasına, yalnızca sen sorduğunda (ya da Nova açıkken arka planda son haberleri önceden hazırlarken).</td></tr>
+<tr><td><b>Güncel bilgi istekleri</b> (maç sonucu, iki yer arası yol, döviz/altın, kısa bilgi)</td><td>Sorduğun şeyi internetten bulup söylemek</td><td>Soruna göre: ESPN (takım kimliği), Open‑Meteo ve OSRM (yer adları ve koordinatlar), open.er-api.com ve gold-api.com (kur), Vikipedi (arama sözcüğü). Her internet isteğinde IP adresin o hizmetçe görünür. Kimlik, hesap ya da reklam kimliği gönderilmez. İstersen <b>Ayarlar → Dinleme → İnternet ve hafıza</b>’dan kapatırsın.</td></tr>
+<tr><td><b>Hafıza</b> (tuttuğun takım, “en sevdiğim …” gibi açıkça söylediklerin; son internet cevapları)</td><td>Seni daha iyi tanımak, internet yokken en son öğrendiğini söylemek</td><td>Yalnızca cihazında kalır. Sağlık, para, kimlik gibi bilgileri kaydetmez. Ayarlardan görüp silebilirsin.</td></tr>
+<tr><td><b>Adın, ayarların, notların</b></td><td>Kişiselleştirme</td><td>Yalnızca cihazında kalır.</td></tr>
+<tr><td><b>Yüklü uygulama adları</b></td><td>“YouTube aç” gibi komutlarda uygulamayı bulmak</td><td>Cihazda işlenir, paylaşılmaz.</td></tr>
+</table>
+
+<h2>4. İzinler</h2>
+<ul>
+<li><b>Mikrofon:</b> sesli komut.</li>
+<li><b>Bildirimler ve ön plan hizmeti (mikrofon türü):</b> “Sesli çağrı” ya da yüzen balon açıkken gösterilen zorunlu bildirim. Bildirimdeki “Durdur” her şeyi kapatır.</li>
+<li><b>Diğer uygulamaların üzerinde göster:</b> yalnızca isteğe bağlı “Yüzen balon” için. Balon yalnızca dokunuşunu alır; ekrandaki içeriği okumaz, kaydetmez.</li>
+<li><b>Alarm kurma:</b> “alarm kur” komutu için.</li>
+<li><b>İnternet:</b> hava, haber, maç/yol/döviz/bilgi cevapları ve isteğe bağlı bulut hizmetleri için.</li>
+</ul>
+
+<h2>5. Üçüncü taraf hizmetler</h2>
+<p>Yukarıda adı geçen hizmetler (Google, TRT Haber, ESPN, OSRM, open.er-api.com, gold-api.com, Vikipedi, Open‑Meteo, ipwho.is, ve girdiysen kendi seçtiğin yapay zekâ/ses sağlayıcıları) kendi gizlilik politikalarına göre çalışır. Çevrimdışı tanıma ve konuşma modelleri (Vosk, Whisper, Supertonic) cihazda çalışır.</p>
+
+<h2>6. Saklama ve silme</h2>
+<p>Veriler yalnızca cihazındadır. <b>Ayarlar → Hakkında → Tüm verilerimi sil</b> ile ayarlar, notlar, hafıza, önbellek ve anahtarlar silinir; uygulamayı kaldırmak da hepsini siler. Nova sunucusunda verin olmadığından ayrıca silme talebi gerekmez.</p>
+
+<h2>7. Çocuklar</h2>
+<p>Nova 13 yaşın altındaki çocuklara yönelik değildir ve onlardan bilerek veri toplamaz.</p>
+
+<h2>8. Yapay zekâ içeriği</h2>
+<p>Serbest sohbet yanıtları yapay zekâ tarafından üretilir ve hatalı olabilir. Uygulamadaki “Yanıtı bildir / geri bildirim” bağlantısıyla bildirebilirsin.</p>
+
+<h2>9. Değişiklikler ve iletişim</h2>
+<p>Bu politika güncellenebilir; yeni sürüm bu sayfada yayımlanır. Sorular için: <b>[İLETİŞİM E-POSTASI]</b></p>
+</body></html>
